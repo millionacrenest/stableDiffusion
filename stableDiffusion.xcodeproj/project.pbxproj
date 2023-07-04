@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CB8043332A48CF82009CB61B /* stableDiffusionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043322A48CF82009CB61B /* stableDiffusionApp.swift */; };
-		CB8043352A48CF82009CB61B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043342A48CF82009CB61B /* Item.swift */; };
 		CB8043372A48CF82009CB61B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043362A48CF82009CB61B /* ContentView.swift */; };
 		CB8043392A48CF82009CB61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8043382A48CF82009CB61B /* Assets.xcassets */; };
 		CB80433D2A48CF82009CB61B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB80433C2A48CF82009CB61B /* Preview Assets.xcassets */; };
 		CB8043472A48CF83009CB61B /* stableDiffusionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043462A48CF83009CB61B /* stableDiffusionTests.swift */; };
 		CB8043512A48CF83009CB61B /* stableDiffusionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043502A48CF83009CB61B /* stableDiffusionUITests.swift */; };
 		CB8043532A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043522A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift */; };
+		CBD8D7102A546E220041075C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8D70F2A546E220041075C /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		CB80432F2A48CF82009CB61B /* stableDiffusion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stableDiffusion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8043322A48CF82009CB61B /* stableDiffusionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableDiffusionApp.swift; sourceTree = "<group>"; };
-		CB8043342A48CF82009CB61B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB8043362A48CF82009CB61B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB8043382A48CF82009CB61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB80433A2A48CF82009CB61B /* stableDiffusion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stableDiffusion.entitlements; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		CB80434C2A48CF83009CB61B /* stableDiffusionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stableDiffusionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8043502A48CF83009CB61B /* stableDiffusionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableDiffusionUITests.swift; sourceTree = "<group>"; };
 		CB8043522A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableDiffusionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CBD8D70F2A546E220041075C /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				CB8043322A48CF82009CB61B /* stableDiffusionApp.swift */,
-				CB8043342A48CF82009CB61B /* Item.swift */,
 				CB8043362A48CF82009CB61B /* ContentView.swift */,
+				CBD8D70F2A546E220041075C /* State.swift */,
 				CB8043382A48CF82009CB61B /* Assets.xcassets */,
 				CB80433A2A48CF82009CB61B /* stableDiffusion.entitlements */,
 				CB80433B2A48CF82009CB61B /* Preview Content */,
@@ -262,9 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8043352A48CF82009CB61B /* Item.swift in Sources */,
 				CB8043332A48CF82009CB61B /* stableDiffusionApp.swift in Sources */,
 				CB8043372A48CF82009CB61B /* ContentView.swift in Sources */,
+				CBD8D7102A546E220041075C /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
