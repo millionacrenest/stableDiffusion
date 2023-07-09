@@ -14,6 +14,14 @@
 		CB8043472A48CF83009CB61B /* stableDiffusionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043462A48CF83009CB61B /* stableDiffusionTests.swift */; };
 		CB8043512A48CF83009CB61B /* stableDiffusionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043502A48CF83009CB61B /* stableDiffusionUITests.swift */; };
 		CB8043532A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8043522A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift */; };
+		CB83F3222A547ACB00A3DB3D /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = CB83F3212A547ACB00A3DB3D /* StableDiffusion */; };
+		CB83F3252A547B7700A3DB3D /* Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F3242A547B7700A3DB3D /* Pipeline.swift */; };
+		CB83F3272A547B8300A3DB3D /* PipelineLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F3262A547B8300A3DB3D /* PipelineLoader.swift */; };
+		CB83F3292A547DC400A3DB3D /* ModelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F3282A547DC400A3DB3D /* ModelInfo.swift */; };
+		CB83F32B2A54819100A3DB3D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F32A2A54819100A3DB3D /* Utils.swift */; };
+		CB83F32E2A5B2D4C00A3DB3D /* Path in Frameworks */ = {isa = PBXBuildFile; productRef = CB83F32D2A5B2D4C00A3DB3D /* Path */; };
+		CB83F3312A5B2D5B00A3DB3D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CB83F3302A5B2D5B00A3DB3D /* ZIPFoundation */; };
+		CB83F3332A5B2DE100A3DB3D /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83F3322A5B2DE100A3DB3D /* Downloader.swift */; };
 		CBD8D7102A546E220041075C /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8D70F2A546E220041075C /* State.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +54,11 @@
 		CB80434C2A48CF83009CB61B /* stableDiffusionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stableDiffusionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8043502A48CF83009CB61B /* stableDiffusionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableDiffusionUITests.swift; sourceTree = "<group>"; };
 		CB8043522A48CF83009CB61B /* stableDiffusionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stableDiffusionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB83F3242A547B7700A3DB3D /* Pipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pipeline.swift; sourceTree = "<group>"; };
+		CB83F3262A547B8300A3DB3D /* PipelineLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineLoader.swift; sourceTree = "<group>"; };
+		CB83F3282A547DC400A3DB3D /* ModelInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInfo.swift; sourceTree = "<group>"; };
+		CB83F32A2A54819100A3DB3D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CB83F3322A5B2DE100A3DB3D /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		CBD8D70F2A546E220041075C /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB83F3222A547ACB00A3DB3D /* StableDiffusion in Frameworks */,
+				CB83F32E2A5B2D4C00A3DB3D /* Path in Frameworks */,
+				CB83F3312A5B2D5B00A3DB3D /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +113,11 @@
 		CB8043312A48CF82009CB61B /* stableDiffusion */ = {
 			isa = PBXGroup;
 			children = (
+				CB83F3232A547B6800A3DB3D /* Conversion */,
 				CB8043322A48CF82009CB61B /* stableDiffusionApp.swift */,
 				CB8043362A48CF82009CB61B /* ContentView.swift */,
 				CBD8D70F2A546E220041075C /* State.swift */,
+				CB83F32A2A54819100A3DB3D /* Utils.swift */,
 				CB8043382A48CF82009CB61B /* Assets.xcassets */,
 				CB80433A2A48CF82009CB61B /* stableDiffusion.entitlements */,
 				CB80433B2A48CF82009CB61B /* Preview Content */,
@@ -132,6 +150,17 @@
 			path = stableDiffusionUITests;
 			sourceTree = "<group>";
 		};
+		CB83F3232A547B6800A3DB3D /* Conversion */ = {
+			isa = PBXGroup;
+			children = (
+				CB83F3242A547B7700A3DB3D /* Pipeline.swift */,
+				CB83F3262A547B8300A3DB3D /* PipelineLoader.swift */,
+				CB83F3282A547DC400A3DB3D /* ModelInfo.swift */,
+				CB83F3322A5B2DE100A3DB3D /* Downloader.swift */,
+			);
+			path = Conversion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +177,11 @@
 			dependencies = (
 			);
 			name = stableDiffusion;
+			packageProductDependencies = (
+				CB83F3212A547ACB00A3DB3D /* StableDiffusion */,
+				CB83F32D2A5B2D4C00A3DB3D /* Path */,
+				CB83F3302A5B2D5B00A3DB3D /* ZIPFoundation */,
+			);
 			productName = stableDiffusion;
 			productReference = CB80432F2A48CF82009CB61B /* stableDiffusion.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +254,11 @@
 				Base,
 			);
 			mainGroup = CB8043262A48CF82009CB61B;
+			packageReferences = (
+				CB83F3202A547ACB00A3DB3D /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
+				CB83F32C2A5B2D4C00A3DB3D /* XCRemoteSwiftPackageReference "Path.swift" */,
+				CB83F32F2A5B2D5B00A3DB3D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
 			productRefGroup = CB8043302A48CF82009CB61B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +303,12 @@
 			files = (
 				CB8043332A48CF82009CB61B /* stableDiffusionApp.swift in Sources */,
 				CB8043372A48CF82009CB61B /* ContentView.swift in Sources */,
+				CB83F3332A5B2DE100A3DB3D /* Downloader.swift in Sources */,
 				CBD8D7102A546E220041075C /* State.swift in Sources */,
+				CB83F32B2A54819100A3DB3D /* Utils.swift in Sources */,
+				CB83F3292A547DC400A3DB3D /* ModelInfo.swift in Sources */,
+				CB83F3252A547B7700A3DB3D /* Pipeline.swift in Sources */,
+				CB83F3272A547B8300A3DB3D /* PipelineLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +482,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -476,7 +520,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -621,6 +665,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB83F3202A547ACB00A3DB3D /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/ml-stable-diffusion";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		CB83F32C2A5B2D4C00A3DB3D /* XCRemoteSwiftPackageReference "Path.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/Path.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		CB83F32F2A5B2D5B00A3DB3D /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.16;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB83F3212A547ACB00A3DB3D /* StableDiffusion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB83F3202A547ACB00A3DB3D /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
+			productName = StableDiffusion;
+		};
+		CB83F32D2A5B2D4C00A3DB3D /* Path */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB83F32C2A5B2D4C00A3DB3D /* XCRemoteSwiftPackageReference "Path.swift" */;
+			productName = Path;
+		};
+		CB83F3302A5B2D5B00A3DB3D /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB83F32F2A5B2D5B00A3DB3D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB8043272A48CF82009CB61B /* Project object */;
 }
